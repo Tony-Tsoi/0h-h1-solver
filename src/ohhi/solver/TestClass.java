@@ -4,7 +4,7 @@ package ohhi.solver;
  * The tester class for testing the verifier and solver.
  * 
  * @author Wai Cheong Tsoi
- * @version 1.0
+ * @version 1.0.1
  */
 public class TestClass
 {
@@ -29,14 +29,14 @@ public class TestClass
                          {1,2,2,1,1,2} };*/
       // case 2: rows and columns same
       
-      int[][] puzzle = { {0,0,0,0,2,0,0,0},
+     /* int[][] puzzle = { {0,0,0,0,2,0,0,0},
                          {0,2,0,0,0,0,0,0},
                          {1,0,0,0,0,0,0,2},
                          {0,0,1,0,2,0,0,0},
                          {0,2,0,1,0,1,0,2},
                          {0,0,0,0,0,0,0,0},
                          {0,0,1,1,0,0,0,0},
-                         {0,2,0,0,0,0,0,0} };
+                         {0,2,0,0,0,0,0,0} };*/
       
       // case 3: a 8x8 normal solvable matrix
       
@@ -54,6 +54,18 @@ public class TestClass
                          {2,0,0,0,0,0,0,1,1,0,0,0} }; */
       
       // case 4: a 12x12 normal solvable matrix w/o comparing rows and columns
+      
+   /*   int[][] puzzle = { {0,0,0,0},
+                         {1,1,2,2},
+                         {1,2,1,2},
+                         {0,0,0,0} };*/
+      // case 5: a open-ended multi-solution solvable 4x4 matrix
+      
+      int[][] puzzle = { {0,0,0,0},
+                         {1,1,2,2},
+                         {1,1,2,2},
+                         {0,0,0,0} };
+      // case 6: a NOT solvable 4x4 matrix
       
       printPuzzle(puzzle);
       
